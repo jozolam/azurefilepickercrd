@@ -21,24 +21,15 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
-	"math/rand/v2"
-	"net/http"
-	"strings"
-
-	// log2 "log"
-	// "strings"
-
-	// batchv1 "k8s.io/api/batch/v1"
-	// v1 "k8s.io/api/core/v1"
-	// metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	// "k8s.io/apimachinery/pkg/types"
-
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
+	"math/rand/v2"
+	"net/http"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
+	"strings"
 
 	azurefilepickerv1 "example.com/azurefilepickercrd/api/v1"
 )

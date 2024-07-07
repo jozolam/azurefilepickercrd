@@ -1,8 +1,9 @@
 # azurefilepickercrd
-// TODO(user): Add simple overview of use/purpose
+**You can easily pick random file from azure account and container with this custom CRD :)**
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+To run this you need first setup your sas token in the way that it is present in the same namespace as you will
+create resources. It should be named **"sas-token"** and it should have stored actual token under the key **"token"**.
 
 ## Getting Started
 
@@ -11,6 +12,12 @@
 - docker version 17.03+.
 - kubectl version v1.11.3+.
 - Access to a Kubernetes v1.11.3+ cluster.
+
+### To test
+
+```sh
+make test
+```
 
 ### To Deploy on the cluster
 **Build and push your image to the location specified by `IMG`:**
